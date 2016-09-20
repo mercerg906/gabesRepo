@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contract Form</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheetForms.css">
+	<link rel="stylesheet" href="stylesheetPages.css" >
+</head>
+<body>
+
+<div class="navStyle">
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active" ><a href="adminHome.html">AsURent</a></li>
+  <li role="presentation"><a href="#">Settings</a></li>
+  <div class="shiftRight">
+	<li role="presentation"><a href="#"><button type="button" class="btn btn-default">Log Out</button></a></li>
+  </div>
+</ul>
+</div>
+
+
+<div>
+	<div>
+		<h1 align="center"><p class="firstTent">AsURent</p>Contract</h1>
+	</div>
+
+	<form action="" method="post">
+		<fieldset>
+		<table class="table shadow">
+			<legend class="tent shadow">Please fill out the following contract information</legend>
+				<tr>
+					<td>Contract Id:</td>
+					<td><input type="text" name="contractId"></td>
+				</tr>
+				<tr>
+					<td>Lanlord Id:</td>
+					<td><input type="text" name="lanlordId"></td>
+				</tr>
+				<tr>
+					<td>Tenant Id:</td>
+					<td><input type="text" name="tenantId"></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><input type="date" name="address" placeholder="street city, state zip"></td>
+				</tr>
+				<tr>
+					<td>Start Date:</td>
+					<td><input type="text" name="startDate"></td>
+				</tr>
+				<tr>
+					<td>End Date:</td>
+					<td><input type="endDate"></td>
+				</tr>
+		</table>
+		</fieldset><br>
+		<input type="submit" value="Submit Contract" class="shadow btn btn-default">
+		<input type="reset" value="Restart" class="shadow btn btn-default">
+	</form>
+</div>
+
+<footer>
+<p>&#174 AsURent</p>
+</footer>
+
+</body>
+</html>

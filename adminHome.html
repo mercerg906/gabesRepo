@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+</html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Admin AsURent Home</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheetPages.css" >
+	
+</head>
+<body>
+
+<!-- This is header/nav bars -->
+<div class="navStyle">
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active" ><a href="adminHome.html">AsURent</a></li>
+  <li role="presentation"><a href="#">Settings</a></li>
+  <div class="shiftRight">
+	<li role="presentation"><a href="#"><button type="button" class="btn btn-default">Log Out</button></a></li>
+  </div>
+</ul>
+</div>
+<!-- end of header/nav bars -->
+
+
+<!-- Start of body content -->
+<section>
+	<div class="container"> <!--container-->
+		<div>
+			<div class="center smallBox">
+				<h2>Manage Acount</h2>
+				<p>The online rental collection web application that makes rent 
+				collection, contract, and tenant management fast, easy, and trouble free!</p>
+			</div>
+		</div>
+		
+			<div class="textCenter">
+				<div class="smallBox row">
+					<h2>Create Contract</h1>
+					<a href="contractForm.html" class="shadow btn btn-primary">View Contracts</a>
+				</div>
+				
+				<div class="smallBox row">
+					<h2>Create Invoice</h2>
+					<a href="invoiceForm.html" class="shadow btn btn-primary">View Tenants</a>
+				</div>
+				
+				<div class="smallBox row">
+					<h2>Update contracts</h2>
+					<a href="updateForm.html" class="shadow btn btn-primary">Update</a>
+				</div>
+			</div>
+		
+	</div>
+</section>
+
+<!-- A hidden input named public_token will be appended to this form
+once the user has completed the Link flow. Link will then submit the
+form, sending the public_token to your server. -->
+<form id="some-id" method="POST" action="/authenticate"></form>
+
+<!-- To use Link with longtail institutions on Connect, set the
+data-longtail attribute to 'true'. See the Parameter Reference for
+additional documentation. -->
+<script
+  src="https://cdn.plaid.com/link/stable/link-initialize.js"
+  data-client-name="Client Name"
+  data-form-id="some-id"
+  data-key="test_key"
+  data-product="auth"
+  data-env="tartan">
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Form</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheetForms.css">
+		<link rel="stylesheet" href="stylesheetPages.css" >
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js.js"></script>
+		
+	
+</head>
+<body>
+
+<div class="navStyle">
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active" ><a href="adminHome.html">AsURent</a></li>
+  <li role="presentation"><a href="#">Settings</a></li>
+  <div class="shiftRight">
+	<li role="presentation"><a href="#"><button type="button" class="btn btn-default">Log Out</button></a></li>
+  </div>
+</ul>
+</div>
+
+<div>
+	<div>
+		<h1 align="center"><p class="firstTent">AsURent</p>Update</h1>
+	</div>
+	
+		<table class="table">
+			<legend class="tent">Select the item that you whish to update</legend>
+				<tr>
+					<td>Select Item</td>
+					<td>
+					<select>
+						<option value="Select" selected>Select</option>
+						<option value="invoice" id="inv">Invoice</option>
+						<option value="invoice" id="con">Contract</option>
+						<option value="invoice_id" id="inv-id-btn">Invoice Id</option>
+						<option value="contract_id" id="con-id">Contract Id</option>
+						<option value="base_rate" id="base-rate">Base Rate</option>
+						<option value="create_date" id="dt-crt">Date Created</option>
+						<option value="paid-date" id="pd-dt">Paid Date</option>
+					</select>
+					</td>
+				</tr>
+				
+		</table>
+		
+		<form action="" method="post" id="inv-frm" class="fadein">
+		<fieldset>
+			<table class="table table-hover shadow">
+				<legend class="tent shadow">Please fill out the following information to update your invoice</legend>
+					<tr>
+						<td>Invoice Id:</td>
+						<td><input type="text" name="invoiceId"></td>
+					</tr>
+					<tr>
+						<td>Contract Id:</td>
+						<td><input type="text" name="contractId"></td>
+					</tr>
+					<tr>
+						<td>Base Rate:</td>
+						<td><input type="text" name="baseRate"></td>
+					</tr>
+					<tr>
+						<td>Created Date:</td>
+						<td><input type="date" name="startDate" placeholder="Month/Day/Yead"></td>
+					</tr>
+			</table>
+			</fieldset><br>
+			<input type="submit" value="Update" class="shadow btn btn-primary">
+			<input type="reset" value="Restart" class="shadow btn btn-primary">
+		</form>
+	
+		<form action="" method="post" class="fadein" id="inv-id-frm">
+			<fieldset>
+			<table class="table table-hover shadow">
+				<legend class="tent shadow">Update Invoice Id for existing contract</legend>
+					<tr>
+						<td>Invoice Id:</td>
+						<td><input type="text" name="Invoice_Id"></td>
+					</tr>
+			</table>
+			</fieldset><br>
+			<input type="submit" value="Update" class="shadow btn btn-primary">
+			<input type="reset" value="Restart" class="shadow btn btn-primary">
+		</form>
+		
+		<form action="" method="post" class="fadein" id="con-id-frm">
+			<fieldset>
+			<table class="table table-hover shadow">
+				<legend class="tent shadow">Update Contract Id for existing contract</legend>
+					<tr>
+						<td>Contract Id:</td>
+						<td><input type="text" name="Invoice_Id"></td>
+					</tr>
+			</table>
+			</fieldset><br>
+			<input type="submit" value="Update" class="shadow btn btn-primary">
+			<input type="reset" value="Restart" class="shadow btn btn-primary">
+		</form>
+		
+		<form action="" method="post" class="fadein" id="bs-rt-frm">
+			<fieldset>
+			<table class="table table-hover shadow">
+				<legend class="tent shadow">Update Base Rate for existing contract</legend>
+					<tr>
+						<td>Base Rate</td>
+						<td><input type="text" name="Base Rate"></td>
+					</tr>
+			</table>
+			</fieldset><br>
+			<input type="submit" value="Update" class="shadow btn btn-primary">
+			<input type="reset" value="Restart" class="shadow btn btn-primary">
+		</form>
+		
+		<form action="" method="post" class="fadein" id="dt-crt-frm">
+			<fieldset>
+			<table class="table table-hover shadow">
+				<legend class="tent shadow">Update Date Created for existing contract</legend>
+					<tr>
+						<td>Date Created</td>
+						<td><input type="text" name="Base Rate"></td>
+					</tr>
+			</table>
+			</fieldset><br>
+			<input type="submit" value="Update" class="shadow btn btn-primary">
+			<input type="reset" value="Restart" class="shadow btn btn-primary">
+		</form>
+		
+		<form action="" method="post" class="fadein" id="pd-dt-frm">
+			<fieldset>
+			<table class="table table-hover shadow">
+				<legend class="tent shadow">Update Paid Date for existing contract</legend>
+					<tr>
+						<td>Paid Date</td>
+						<td><input type="text" name="Paid Date"></td>
+					</tr>
+			</table>
+			</fieldset><br>
+			<input type="submit" value="Update" class="shadow btn btn-primary">
+			<input type="reset" value="Restart" class="shadow btn btn-primary">
+		</form>
+		
+		<form action="" method="post" class="fadein" id="con-frm">
+		<fieldset>
+		<table class="table table-hover shadow">
+			<legend class="tent shadow">Please fill out the following to update contract information</legend>
+				<tr>
+					<td>Contract Id:</td>
+					<td><input type="text" name="contractId"></td>
+				</tr>
+				<tr>
+					<td>Lanlord Id:</td>
+					<td><input type="text" name="lanlordId"></td>
+				</tr>
+				<tr>
+					<td>Tenant Id:</td>
+					<td><input type="text" name="tenantId"></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><input type="date" name="address" placeholder="street city, state zip"></td>
+				</tr>
+				<tr>
+					<td>Start Date:</td>
+					<td><input type="text" name="startDate"></td>
+				</tr>
+				<tr>
+					<td>End Date:</td>
+					<td><input type="endDate"></td>
+				</tr>
+		</table>
+		</fieldset><br>
+		<input type="submit" value="Update" class="shadow btn btn-primary">
+		<input type="reset" value="Restart" class="shadow btn btn-primary">
+	</form>
+		
+	
+
+</div>
+
+		
+			
+			<p class="fadein">test content</p>
+			
+		
+
+<footer>
+	<p>&#174 AsURent</p>
+</footer>
+</body>
+</html>

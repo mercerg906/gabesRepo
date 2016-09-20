@@ -1,0 +1,62 @@
+
+fieldset {
+	display:inline;
+}
+
+.shadow {
+	box-shadow: 5px 5px 5px black;
+}
+
+.tent {
+	color: white;
+}
+
+
+.fadeColors{
+	
+	background: radial-gradient(circle, black, #ab5403, black);
+}
+
+body {
+
+	background: linear-gradient(black,  #ab5403);
+	background-repeat: no-repeat;
+	height: 100%;
+	background-attachment: fixed;
+	
+}
+
+input {
+	color: black;
+}
+
+h1 {
+	color: #c6c5c4;
+}
+input:hover {
+	background-color: #c6c5c4;
+}
+
+td {
+	color:white;
+}
+
+div {
+	text-align:center;	
+}
+
+/*Color tent of AsURent Logo in forms*/
+.firstTent {
+	color: white;
+	margin-bottom:-5px;
+}
+
+footer {
+	height:115px;
+	text-align: center;
+	color: #c6c5c4;
+	margin-top: 30px;
+}
+
+/*to hide content (mainly used in update form )*/
+

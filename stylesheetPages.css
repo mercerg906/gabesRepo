@@ -1,0 +1,62 @@
+.navStyle {
+	background: linear-gradient(to right, black, #ab5403, black);
+}
+
+a {
+	color: white;
+}
+
+.shiftRight {
+	float: right;
+	margin-right: 10px;
+	margin-top: 3px
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.center {
+	margin: auto;
+	width:100%;
+	display: block;
+	text-align: center;
+}
+
+.smallBox {
+	width: 33%;
+}
+
+.largeBox {
+	width: 800px;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.row {
+	float: left;
+	display: inline-block;
+}
+
+.container {
+	width: 970px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#some-id {
+	color: red;
+}
