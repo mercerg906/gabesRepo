@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+</html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>AsURent Home</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/stylesheetPages.css" >
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/pageJs.js"></script>
+		
+	
+</head>
+<body>
+
+<!-- This is header/nav bars -->
+<div class="navStyle">
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active" ><a href="#">AsURent</a></li>
+  <li role="presentation"><a href="#">View payment history</a></li>
+  <li role="presentation"><a href="#">Send message to landlord</a></li>
+  <div class="shiftRight">
+	<li role="presentation"><a href="#"><button type="button" class="btn btn-default">Log Out</button></a></li>
+  </div>
+</ul>
+</div>
+<!-- end of header/nav bars -->
+
+
+<!-- Start of body content -->
+<section>
+	<div class="container"> <!--container-->
+		<div>
+			<div class="center smallBox">
+				<h2>Welcome to AsURent!</h2>
+				<p>Your landloard has sent you a contract. Please review the contract below
+				and sign below with your last name followed by your last 4 digits of your 
+				social security number</p>
+			</div>
+		</div>
+
+		<div>
+			<div>
+			<table class="table shadow">
+			<legend class="tent shadow">Please verify information</legend>
+				<tr>
+					<td>Contract Id:</td>
+					<td><input type="text" name="contractId" value="55646"></td>
+				</tr>
+				<tr>
+					<td>Lanlord Id:</td>
+					<td><input type="text" name="lanlordId" value="45587"></td>
+				</tr>
+				<tr>
+					<td>Tenant Id:</td>
+					<td><input type="text" name="tenantId" value="22315"></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><input type="date" name="address" placeholder="street" 
+					value="4487 Hunters Ridge trail"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="date" name="address" placeholder="city" value="Durham"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="date" name="address" placeholder="state" value="North Carolina"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="date" name="address" placeholder="zip" value="27007"></td>
+				</tr>
+				<tr>
+					<td>Start Date:</td>
+					<td><input type="text" name="startDate" placeholder="mm/dd/yy" value="10/01/2016"></td>
+				</tr>
+				<tr>
+					<td>End Date:</td>
+					<td><input type="endDate" value="10/01/2017"></td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		
+	</div>
+	
+</section>
+
+
+<section class="grayBack">
+		<div class="container"> <!--container-->
+		<form>
+			
+			<table class="table">
+				<legend>Please enter bank account information and then sign below</legend>
+				<tr>
+					<td>Bank Account Routing Number:</td>
+						<td><input type="txt" name="bankRout" placeholder="Routing Number"/></td>
+				</tr>
+				<tr>
+					<td>Bank Account Number:</td>
+					<td><input type="txt" name="bankAccount"placeholder="Account Number"/></td>
+				</tr>
+			</table>
+			
+			<div>
+				<div class="center">
+					<h2>Electronic Signature</h2>
+					Last name, followed by last 4 digits of SSN: <input type="txt"/>
+				</div>
+			</div>
+			<div class="center">
+				<input type="submit" value="Sign"/>
+			</div>
+		</form>
+	</div>
+</section>
+
+
+
+</body>
+</html>

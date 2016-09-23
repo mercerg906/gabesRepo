@@ -4,20 +4,24 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title> Admin AsURent Home</title>
+	<title> Admin Home</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="stylesheetPages.css" >
+	<link rel="stylesheet" href="css/stylesheetPages.css" >
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/pageJs.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
 	
 </head>
 <body>
 
 <!-- This is header/nav bars -->
-<div class="navStyle">
+<div class="navStyle ">
 <ul class="nav nav-tabs">
   <li role="presentation" class="active" ><a href="adminHome.html">AsURent</a></li>
   <li role="presentation"><a href="#">Settings</a></li>
   <div class="shiftRight">
-	<li role="presentation"><a href="#"><button type="button" class="btn btn-default">Log Out</button></a></li>
+	<li role="presentation"><a href="home.html"><button type="button" class="btn btn-default">Log Out</button></a></li>
   </div>
 </ul>
 </div>
@@ -38,39 +42,124 @@
 			<div class="textCenter">
 				<div class="smallBox row">
 					<h2>Create Contract</h1>
-					<a href="contractForm.html" class="shadow btn btn-primary">View Contracts</a>
+					<a href="forms/contractForm.html" class="shadow btn btn-default">Contract</a>
 				</div>
 				
 				<div class="smallBox row">
 					<h2>Create Invoice</h2>
-					<a href="invoiceForm.html" class="shadow btn btn-primary">View Tenants</a>
+					<a href="forms/invoiceForm.html" class="shadow btn btn-default">Invoice</a>
 				</div>
 				
 				<div class="smallBox row">
 					<h2>Update contracts</h2>
-					<a href="updateForm.html" class="shadow btn btn-primary">Update</a>
+					<a href="forms/updateForm.html" class="shadow btn btn-default">Update</a>
 				</div>
+				
+				<div class="smallBox row">
+					<h2>View Invoices</h2>
+					<a href="#invLi" class="shadow btn btn-default">View Invoice</a>
+				</div>
+				
+				<div class="smallBox row">
+					<h2>View Contracts</h2>
+					<a href="#conLi" class="shadow btn btn-default">View Contracts</a>
+				</div>
+				
+			</div>
+			
+			<div class="textCenter smallBox">
+				<div>
+			
+					<!-- A hidden input named public_token will be appended to this form
+					once the user has completed the Link flow. Link will then submit the
+					form, sending the public_token to your server. -->
+					<form id="some-id" method="POST" action="/authenticate"></form>
+
+					<!-- To use Link with longtail institutions on Connect, set the
+					data-longtail attribute to 'true'. See the Parameter Reference for
+					additional documentation. -->
+					<script
+					  src="https://cdn.plaid.com/link/stable/link-initialize.js"
+					  data-client-name="Client Name"
+					  data-form-id="some-id"
+					  data-key="test_key"
+					  data-product="auth"
+					  data-env="tartan">
+					</script>
+				
+				</div>	
 			</div>
 		
 	</div>
 </section>
 
-<!-- A hidden input named public_token will be appended to this form
-once the user has completed the Link flow. Link will then submit the
-form, sending the public_token to your server. -->
-<form id="some-id" method="POST" action="/authenticate"></form>
+<section class="grayBack">
+	<div class="container"> <!--container-->
+		<div>
+			<div class="center">
+				<h2>Select Tenant</h2>
+			</div>
+		</div>
+	
+		<div>
+			<div class="center">
+				<select>
+						<option value="select" id="sel" selected>Select</option>
+						<option value="maggie" id="maggie">Maggie</option>
+						<option value="sally" id="sally"> Sally</option>
+						<option value="fred" id="fred">Fred</option>
+				</select>
+			</div>
+		</div>
+		
+		<div>
+			<div>
+				<table class="table shadow fadein" id="u-frm">
+				
+					<tr>
+						<td>Contract Id:</td>
+						<td><input type="text" name="contractId" value="55646"></td>
+					</tr>
+					<tr>
+						<td>Lanlord Id:</td>
+						<td><input type="text" name="lanlordId" value="45587"></td>
+					</tr>
+					<tr>
+						<td>Tenant Id:</td>
+						<td><input type="text" name="tenantId" value="22315"></td>
+					</tr>
+					<tr>
+						<td>Address:</td>
+						<td><input type="date" name="address" placeholder="street" 
+						value="4487 Hunters Ridge trail"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="date" name="address" placeholder="city" value="Durham"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="date" name="address" placeholder="state" value="North Carolina"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="date" name="address" placeholder="zip" value="27007"></td>
+					</tr>
+					<tr>
+						<td>Start Date:</td>
+						<td><input type="text" name="startDate" placeholder="mm/dd/yy" value="10/01/2016"></td>
+					</tr>
+					<tr>
+						<td>End Date:</td>
+						<td><input type="endDate" value="10/01/2017"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+	</div>
+</section>
 
-<!-- To use Link with longtail institutions on Connect, set the
-data-longtail attribute to 'true'. See the Parameter Reference for
-additional documentation. -->
-<script
-  src="https://cdn.plaid.com/link/stable/link-initialize.js"
-  data-client-name="Client Name"
-  data-form-id="some-id"
-  data-key="test_key"
-  data-product="auth"
-  data-env="tartan">
-</script>
 
 
 

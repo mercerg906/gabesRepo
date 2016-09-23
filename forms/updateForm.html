@@ -3,11 +3,11 @@
 <head>
 	<title>Update Form</title>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="stylesheetForms.css">
-		<link rel="stylesheet" href="stylesheetPages.css" >
+		<link rel="stylesheet" type="text/css" href="../css/stylesheetForms.css">
+		<link rel="stylesheet" href="../css/stylesheetPages.css" >
 		
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script type="text/javascript" src="js.js"></script>
+		<script type="text/javascript" src="../js/js.js"></script>
 		
 	
 </head>
@@ -15,7 +15,7 @@
 
 <div class="navStyle">
 <ul class="nav nav-tabs">
-  <li role="presentation" class="active" ><a href="adminHome.html">AsURent</a></li>
+  <li role="presentation" class="active" ><a href="../adminHome.html">AsURent</a></li>
   <li role="presentation"><a href="#">Settings</a></li>
   <div class="shiftRight">
 	<li role="presentation"><a href="#"><button type="button" class="btn btn-default">Log Out</button></a></li>
@@ -31,7 +31,7 @@
 		<table class="table">
 			<legend class="tent">Select the item that you whish to update</legend>
 				<tr>
-					<td>Select Item</td>
+					<td class="tent">Select Item</td>
 					<td>
 					<select>
 						<option value="Select" selected>Select</option>
@@ -50,7 +50,7 @@
 		
 		<form action="" method="post" id="inv-frm" class="fadein">
 		<fieldset>
-			<table class="table table-hover shadow">
+			<table class="table  shadow">
 				<legend class="tent shadow">Please fill out the following information to update your invoice</legend>
 					<tr>
 						<td>Invoice Id:</td>
@@ -70,13 +70,13 @@
 					</tr>
 			</table>
 			</fieldset><br>
-			<input type="submit" value="Update" class="shadow btn btn-primary">
-			<input type="reset" value="Restart" class="shadow btn btn-primary">
+			<input type="submit" value="Update" class="shadow btn btn-default">
+			<input type="reset" value="Restart" class="shadow btn btn-default">
 		</form>
 	
 		<form action="" method="post" class="fadein" id="inv-id-frm">
 			<fieldset>
-			<table class="table table-hover shadow">
+			<table class="table shadow">
 				<legend class="tent shadow">Update Invoice Id for existing contract</legend>
 					<tr>
 						<td>Invoice Id:</td>
@@ -84,13 +84,13 @@
 					</tr>
 			</table>
 			</fieldset><br>
-			<input type="submit" value="Update" class="shadow btn btn-primary">
-			<input type="reset" value="Restart" class="shadow btn btn-primary">
+			<input type="submit" value="Update" class="shadow btn btn-default">
+			<input type="reset" value="Restart" class="shadow btn btn-default">
 		</form>
 		
 		<form action="" method="post" class="fadein" id="con-id-frm">
 			<fieldset>
-			<table class="table table-hover shadow">
+			<table class="table shadow">
 				<legend class="tent shadow">Update Contract Id for existing contract</legend>
 					<tr>
 						<td>Contract Id:</td>
@@ -98,13 +98,13 @@
 					</tr>
 			</table>
 			</fieldset><br>
-			<input type="submit" value="Update" class="shadow btn btn-primary">
-			<input type="reset" value="Restart" class="shadow btn btn-primary">
+			<input type="submit" value="Update" class="shadow btn btn-default">
+			<input type="reset" value="Restart" class="shadow btn btn-default">
 		</form>
 		
 		<form action="" method="post" class="fadein" id="bs-rt-frm">
 			<fieldset>
-			<table class="table table-hover shadow">
+			<table class="table  shadow">
 				<legend class="tent shadow">Update Base Rate for existing contract</legend>
 					<tr>
 						<td>Base Rate</td>
@@ -112,13 +112,13 @@
 					</tr>
 			</table>
 			</fieldset><br>
-			<input type="submit" value="Update" class="shadow btn btn-primary">
-			<input type="reset" value="Restart" class="shadow btn btn-primary">
+			<input type="submit" value="Update" class="shadow btn btn-default">
+			<input type="reset" value="Restart" class="shadow btn btn-default">
 		</form>
 		
 		<form action="" method="post" class="fadein" id="dt-crt-frm">
 			<fieldset>
-			<table class="table table-hover shadow">
+			<table class="table  shadow">
 				<legend class="tent shadow">Update Date Created for existing contract</legend>
 					<tr>
 						<td>Date Created</td>
@@ -126,13 +126,13 @@
 					</tr>
 			</table>
 			</fieldset><br>
-			<input type="submit" value="Update" class="shadow btn btn-primary">
-			<input type="reset" value="Restart" class="shadow btn btn-primary">
+			<input type="submit" value="Update" class="shadow btn btn-default">
+			<input type="reset" value="Restart" class="shadow btn btn-default">
 		</form>
 		
 		<form action="" method="post" class="fadein" id="pd-dt-frm">
 			<fieldset>
-			<table class="table table-hover shadow">
+			<table class="table  shadow">
 				<legend class="tent shadow">Update Paid Date for existing contract</legend>
 					<tr>
 						<td>Paid Date</td>
@@ -140,13 +140,13 @@
 					</tr>
 			</table>
 			</fieldset><br>
-			<input type="submit" value="Update" class="shadow btn btn-primary">
-			<input type="reset" value="Restart" class="shadow btn btn-primary">
+			<input type="submit" value="Update" class="shadow btn btn-default">
+			<input type="reset" value="Restart" class="shadow btn btn-default">
 		</form>
 		
 		<form action="" method="post" class="fadein" id="con-frm">
 		<fieldset>
-		<table class="table table-hover shadow">
+		<table class="table  shadow">
 			<legend class="tent shadow">Please fill out the following to update contract information</legend>
 				<tr>
 					<td>Contract Id:</td>
@@ -174,8 +174,8 @@
 				</tr>
 		</table>
 		</fieldset><br>
-		<input type="submit" value="Update" class="shadow btn btn-primary">
-		<input type="reset" value="Restart" class="shadow btn btn-primary">
+		<input type="submit" value="Update" class="shadow btn btn-default">
+		<input type="reset" value="Restart" class="shadow btn btn-default">
 	</form>
 		
 	

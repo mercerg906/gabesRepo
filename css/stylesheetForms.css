@@ -17,6 +17,10 @@ fieldset {
 	background: radial-gradient(circle, black, #ab5403, black);
 }
 
+td:nth-child(1){
+	color: white;
+}
+
 body {
 
 	background: linear-gradient(black,  #ab5403);
@@ -38,7 +42,7 @@ input:hover {
 }
 
 td {
-	color:white;
+	color:black;
 }
 
 div {
